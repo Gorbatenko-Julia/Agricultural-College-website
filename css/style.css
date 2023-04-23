@@ -1,0 +1,271 @@
+*{
+    margin-left: 0;
+    padding-right: 0;
+    
+}
+
+a{
+    text-decoration: none;
+
+}
+li{
+    text-decoration: none;
+    list-style:none;
+}
+h1{
+    color:#fff
+}
+
+.logo{
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.graficlogo{
+    padding: 15px;
+    max-width: 100%;
+    box-sizing:border-box;
+}
+nav{
+    margin:auto;
+    width: 800px;
+    height:50px;
+}
+.topnav{
+    background-color:#02f;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.topnav a{
+    color:#fff;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15 px;
+}
+.topnav a:hover{
+    border-bottom: 3px solid #000;
+}
+.topnav .icon{
+    display: none;
+}
+.mw-100{
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px){
+   .topnav a:not(:first-child) {
+    display:none;
+   }
+   .topnav a:icon{
+    float:right;
+    margin-top: -17px;
+    display:block;
+    color:black;
+   }
+   nav{
+    width: 100%;
+    height: 100px;
+   }
+   .topnav.responsive{
+    position: relative;
+   }
+   .topnav.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.topnav.responsive{
+    float:none;
+    display: block;
+    text-align: left;
+}
+}
+.form {
+    position: relative;
+    width: 500px;
+    margin: 100px auto ;
+    text-align: center;
+}
+.form_input,
+.form_textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    transition: transform 0.3s ease-out;
+    color:#02f;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.form_input::-webkit-input-placeholder,
+.form_input::-webkit-input-placeholder {
+    opacity: 0.6;
+    color:#02f
+}
+.form_input:focus,
+.form_textarea:focus {
+    transition: transform 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+}
+.form_textarea{
+    resize: none;
+}
+.form_button {
+    display: inline-block;
+    padding: 12px 32px;
+    transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    color:#fff;
+    border: 2px;
+    background-color: #02f;
+    background-clip: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.form_button:hover {
+    transition: all 0.3s ease-out;
+    transform:scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0,3) 0 0 16px 2px;
+}
+.form3{
+    color:#000;
+    font-size: 24px;
+  
+}
+.kontakt1{
+
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size:20px;
+    line-height: 1.5;
+    text-align:justify;
+}
+.history{
+    margin-top: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size:20px;
+    line-height: 2;
+    text-align:justify;
+}
+.slider{
+   
+    width: 900px;
+    height: 500px;
+    overflow:hidden;
+    border:5px solid #02f;
+}
+.middle{
+    margin-top: 130px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 10px;
+    margin:6px;
+    cursor: pointer;
+    background-color:#02f ;
+    opacity:.5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+  opacity:1;
+  transform:scale(1.1);  
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width:400%;
+    height: 100%;
+    display:flex;
+}
+.slide{
+    width:25%;
+    transition: all .6s ease;
+}
+.slide img{
+    width:100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+.forms{
+    width: 500px;
+    margin: 500px 500px 500px 500px ;
+}
+
+.kart{
+    margin-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size:20px;
+    line-height: 1.5;
+    text-align:justify;
+  
+}
+.kart img{
+width: 340px;
+height: 300px;
+margin:10px;
+padding-left: 60px;
+
+}
+.info{
+    margin-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size:20px;
+    line-height: 2; 
+    text-align:justify;
+}
+.abityrient{
+    margin-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size:20px;
+    line-height: 2;
+    text-align:justify;
+}
+h2{ 
+    text-align:center;
+    color:#02f
+}
+h3{
+    text-align:center;
+    font-size:17px;
+    color:green;
+}
